@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "NearByHospital",
-    "slug": "NearByHospital",
+    "name": "NewsApp",
+    "slug": "newsapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -10,6 +10,16 @@
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "clientId": "YOUR_WEB_CLIENT_ID",
+      "config": {
+        "googleSignIn": {
+          "webClientId": "YOUR_WEB_CLIENT_ID",
+          "redirectUrl": "YOUR_REDIRECT_URI"
+        }
+      }
     },
     "assetBundlePatterns": [
       "**/*"
@@ -21,10 +31,14 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.NearByHospital"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1a8fea37-3a41-4c43-b128-772bf0be00ae"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "owner": "berlin001"
   }
 }
